@@ -402,10 +402,9 @@ if __name__ == '__main__':
     
 '''
 
-from flask import Flask, request, jsonify
+import os
 import easyocr
 from fuzzywuzzy import fuzz
-import os
 import torch
 import torchvision.models as models
 import torchvision.transforms as transforms
@@ -554,5 +553,3 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
-
-
